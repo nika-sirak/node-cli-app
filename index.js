@@ -1,4 +1,17 @@
+const { Command } = require("commander");
 const contactsOperations = require("./db/contacts");
+
+const program = new Command();
+
+program
+  .option("-a, --action <type>", "choose action")
+  .option("-i, --id <type>", "user id")
+  .option("-n, --name <type>", "user name")
+  .option("-e, -email <type>", "user email")
+  .option("-p, --phone <type>", "user phone");
+
+program.parse(process.argv);
+const argv = program.opts();
 
 const invokeAction = async ({ action, id, name, email, phone }) => {
   switch (action) {
@@ -28,9 +41,4 @@ const invokeAction = async ({ action, id, name, email, phone }) => {
   }
 };
 
-invokeAction({
-  action: "add",
-  name: "Mango Db",
-  email: "mango@gmail.com",
-  phone: "0958018728",
-});
+invokeAction(argv);

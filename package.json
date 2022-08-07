@@ -18,10 +18,11 @@
     "url": "https://github.com/nika-sirak/node-cli-app/issues"
   },
   "homepage": "https://github.com/nika-sirak/node-cli-app#readme",
+  "dependencies": {
+    "commander": "^9.4.0",
+    "uuid": "^8.3.2"
+  },
   "devDependencies": {
     "nodemon": "^2.0.19"
-  },
-  "dependencies": {
-    "uuid": "^8.3.2"
   }
 }
