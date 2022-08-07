@@ -1,4 +1,4 @@
-# CLI - application "Contact"
+# CLI - application "Contacts"
 
 action - list https://monosnap.com/file/20tVsiCmVBAYmfLOtFx9Qi2oLLlp7F
 
