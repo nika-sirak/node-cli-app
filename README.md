@@ -1,5 +1,9 @@
 # CLI - application "Contacts"
 
+# Getting Started
+Install my-project with npm
+npm install
+
 action - list https://monosnap.com/file/20tVsiCmVBAYmfLOtFx9Qi2oLLlp7F
 
 action - get https://monosnap.com/file/yHqc66GHRE4VoBABISS4VUXis9WVMn
