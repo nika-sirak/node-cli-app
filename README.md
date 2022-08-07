@@ -11,7 +11,7 @@ $ npm install
 ```
 
 ## Usage
-### Comand line tool that has 4 action
+Comand line tool has 4 action
 Read all contacts: 
 ```
 node index.js --action list
