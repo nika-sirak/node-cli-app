@@ -5,7 +5,11 @@ This project is simple cli - app to work with contacts.
 ## Getting Started
 
 To run this project, install it locally using npm:
+```
 $ npm install
+
+```
+
 
 ## Usage
 
