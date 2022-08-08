@@ -20,16 +20,16 @@ const getContactById = async (contactId) => {
 };
 
 const addContact = async (name, email, phone) => {
-  const newContanct = {
+  const newContact = {
     id: uuidv4(),
     name,
     email,
     phone,
   };
   const contacts = await listContacts();
-  contacts.push(newContanct);
+  contacts.push(newContact);
   updateContacts(contacts);
-  return contacts;
+  return newContact;
 };
 
 const removeContact = async (contactId) => {
