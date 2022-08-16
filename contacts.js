@@ -34,9 +34,13 @@ const addContact = async (name, email, phone) => {
 
 const removeContact = async (contactId) => {
   const contacts = await listContacts();
+  const idx = contacts.findIndex((i) => i.id === contactId);
+  if (idx === -1) {
+    return null;
+  }
   const newContacts = contacts.filter((item) => item.id !== contactId);
   updateContacts(newContacts);
-  return newContacts;
+  return contacts[idx];
 };
 
 module.exports = {
